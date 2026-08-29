@@ -26,13 +26,13 @@ def clean_text(text):
 # ---------- UI ----------
 st.set_page_config(page_title="Sentiment Analysis App", page_icon="💬")
 st.title("💬 Sentiment Analysis App")
-st.write("Koi bhi review ya sentence likhen, model uska sentiment predict karega.")
+st.write("Enter any review or sentence, and the model will predict its sentiment.")
 
-user_input = st.text_area("Apna text yahan likhen:")
+user_input = st.text_area("Enter your text here:")
 
 if st.button("Predict Sentiment"):
     if user_input.strip() == "":
-        st.warning("Pehle kuch text likhen.")
+        st.warning("Please enter some text first.")
     else:
         cleaned = clean_text(user_input)
         vec = vectorizer.transform([cleaned])
