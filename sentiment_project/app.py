@@ -8,10 +8,12 @@ import streamlit as st
 import joblib
 import re
 import string
+import os
 
 # ---------- Load saved model + vectorizer ----------
-model = joblib.load("sentiment_model.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(BASE_DIR, "sentiment_model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "vectorizer.pkl"))
 
 def clean_text(text):
     text = text.lower()
