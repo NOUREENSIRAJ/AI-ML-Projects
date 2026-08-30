@@ -71,23 +71,19 @@ examples = [
 
 st.caption("Try an example:")
 cols = st.columns(len(examples))
-selected_example = None
 for i, col in enumerate(cols):
     with col:
         if st.button(f"Example {i+1}", use_container_width=True, key=f"ex_{i}"):
-            selected_example = examples[i]
-            st.session_state["last_input"] = selected_example
+            st.session_state["text_input_box"] = examples[i]
 
 # ---------- Input ----------
 user_input = st.text_area(
     "Your text",
-    value=st.session_state.get("last_input", ""),
     height=120,
     placeholder="e.g. The acting was brilliant and the story kept me hooked till the end...",
     label_visibility="collapsed",
     key="text_input_box",
 )
-st.session_state["last_input"] = user_input
 
 analyze = st.button("Analyze Sentiment", type="primary", use_container_width=True)
 
