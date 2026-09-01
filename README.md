@@ -11,12 +11,14 @@ Built with Python, scikit-learn and Streamlit by Noureen Siraj.
 
 # A positive prediction
 
-<img width="1836" height="851" alt="sentimentanalysis screenshot" src="https://github.com/user-attachments/assets/f32e6ccb-b56a-4015-8a59-841f9472aee4" />
+<img width="1697" height="837" alt="Screenshot 2026-09-01 180554 3" src="https://github.com/user-attachments/assets/c3f84a8d-e2ef-4c12-b049-f9c26ba458a8" />
+
 
 
 # A neutral prediction
 
-<img width="1836" height="851" alt="sentimentanalysis screenshot" src="https://github.com/user-attachments/assets/37c7841d-fb48-4f4e-a1e0-9223438facf6" />
+<img width="1598" height="807" alt="sentimentanalysisscreenshot1" src="https://github.com/user-attachments/assets/8ceb6226-03f2-4e4e-b4c9-36f717e7596e" />
+
 
 # A negative Prediction
 
