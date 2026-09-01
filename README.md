@@ -1,9 +1,9 @@
-## Sentiment Analysis Web App#
+## Sentiment Analysis Web App
 A three-class sentiment classifier — Positive / Neutral / Negative — trained with scikit-learn and served through an interactive Streamlit interface that returns a label and a confidence score for any sentence you type.
 
 Built with Python, scikit-learn and Streamlit by Noureen Siraj.
 
-## Screenshots#
+## Screenshots
 # The app
 
 <img width="1836" height="851" alt="sentimentanalysis screenshot" src="https://github.com/user-attachments/assets/9a7b4473-3561-45e9-9d28-1a816f4794e9" />
@@ -76,7 +76,7 @@ Requires Python 3.9 or newer.
 # cd sentiment_project
 pip install -r requirements.txt
 streamlit run app.py
-The app opens at http://localhost:8501. The trained model is already committed, so it works straight away — no training needed.
+The app opens at [https://ai-ml-projects-eimracqrgs4tl7gwuxhvjb.streamlit.app/]. The trained model is already committed, so it works straight away — no training needed.
 
 # Retraining on your own data
 train.py expects a CSV named sample_data.csv in the same folder. The dataset itself is not committed to keep the repository small. The Twitter US Airline Sentiment dataset from Kaggle works without any changes.
@@ -94,7 +94,7 @@ scikit-learn	TF-IDF vectorizer, logistic regression, evaluation metrics
 joblib	Saving and loading the trained model
 Streamlit	The web interface
 
-# What I would improve next#
+# What I would improve next
 Swap logistic regression for a fine-tuned transformer and compare F1 per class
 Add a calibration step so the confidence percentage is better aligned with real accuracy
 Handle negation more explicitly rather than relying on bigrams alone
